@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Herberth Leão, herberth@leao.sh" />
+        <title>Collective Mapping</title>
+        <link href="style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="container">
+            <h1 id="title">Collective Mapping</h1>
+            <p id="description">
+                Help us to set up a database of social collectives,
+                so that everyone has access to their actions more easily.
+            </p>
+            <br />
+            <div class="wrapper">
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label id="name-label" class="form-label" for="name">Name</label>
+                        <input id="name" class="textual-input" name="name" placeholder="Collective name" required />
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" class="form-label" for="email">E-mail</label>
+                        <input id="email" class="textual-input" name="email" type="email" placeholder="Collective e-mail" required />
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" class="form-label" for="number">Since</label>
+                        <input id="number" class="textual-input" name="number" type="number" placeholder="Year of creation" min="1900" max="2020" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="dropdown" class="form-label">In which segment does the collective operate?</label>
+                        <select id="dropdown" name="segment" required>
+                            <option disabled selected vaule>Segment of activity</option>
+                            <option value="education">Education</option>
+                            <option vlaue="policy">Policy</option>
+                            <option value="professional">Professional</option>
+                            <option value="charity">Charity</option>
+                            <option vlaue="health">Health</option>
+                            <option vlaue="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p class="form-label">At what scale does the collective act?</p>
+                        <label><input type="radio" name="scale" value="community" checked />Community</label><br />
+                        <label><input type="radio" name="scale" value="community" />Municipal</label><br />
+                        <label><input type="radio" name="scale" value="community" />State</label><br />
+                        <label><input type="radio" name="scale" value="community" />National</label><br />
+                        <label><input type="radio" name="scale" value="community" />Global</label>
+                    </div>
+                    <div class="form-group">
+                        <p class="form-label">What types of activities does the collective carry out?</p>
+                        <label><input type="checkbox" name="activity" value="workshop" />Workshops</label><br />
+                        <label><input type="checkbox" name="activity" value="food" />Food donation</label><br />
+                        <label><input type="checkbox" name="activity" value="health" />Health care</label><br />
+                        <label><input type="checkbox" name="activity" value="debate" />Political debates</label><br />
+                        <label><input type="checkbox" name="activity" value="funded" />Funded projects</label><br />
+                        <label><input type="checkbox" name="activity" value="other" />Others</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="about">About the collective</label>
+                        <textarea id="about" name="about" rows="3" placeholder="Describe a little about the project"></textarea>
+                    </div>
+                    <button id="submit" type="submit" name="submit">Send</button>
+                </form>
+            </div>
+            <br />
+            <div class="signature">Developed with <span class="heart">&#10084;</span> by <a class="link" href="https://leao.sh">Herberth Leão</a></div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #FFF url('../images/background.png') no-repeat fixed;
+    background-size: cover;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#title {
+    font-size: 2rem;
+}
+
+#description {
+    display: inline-block;
+    margin: 30px 0;
+    max-width: 40%;
+}
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px 40px 40px 40px;
+    max-width: 50%;
+}
+
+#survey-form {
+    text-align: left;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form-label {
+    display: block;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.textual-input, select, textarea, button {
+    border: #CCC solid 1px;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px;
+    resize: vertical;
+    width: 100%;
+}
+
+.signature {
+    display: inline-block;
+    margin-top: 40px;
+    max-width: 40%;
+}
+
+.heart {
+    color: #F00;
+}
+
+.link {
+    color: #333;
+    font-weight: 800;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+input[type=radio], input[type=checkbox] {
+    height: 15px;
+    margin-right: 10px;
+    width: 15px;
+}
+
+button {
+    background: #228C22;
+    border: none;
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    #description {
+        max-width: 70%;
+    }
+
+    .wrapper {
+        max-width: 80%;
+    }
+
+    .signature {
+        max-width: 70%;
+    }
+}
