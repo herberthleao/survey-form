@@ -15,4 +15,4 @@ It's visualization can be found at [CodePen](https://codepen.io/herberthleao/ful
 
 ## License
 
-This project is open-sourced software licensed under the [MIT License](LICENSE.md).
+This project is open-sourced software licensed under the [MIT License](license.md).
